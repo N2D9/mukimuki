@@ -160,10 +160,10 @@ if ('serviceWorker' in navigator) {
         ＿＿＿
         <span class="answer">塩化ナトリウム</span>
     </span>
-    水溶液の電気分解
+    水溶液の電気分解<br>
     [陰極]　<span class="blank" onclick="toggle(this)">
         ＿＿＿
-        <span class="answer">2H₂O+"e⁻→2NaOH+H₂O+H₂+Cl₂</span>
+        <span class="answer">2H₂O+2e⁻→OH⁻+H₂</span>
     </span>
     <br>
     [陽極]　<span class="blank" onclick="toggle(this)">
@@ -704,7 +704,7 @@ Na同様、イオン化傾向が
 
 ③ 石膏を加熱した
 <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">焼き石膏（CaSO₄・1/2H₂O）</span></span>
-に水を加えて練り、放置すると硬化する。<br>
+に水を加えて練り、放置すると発熱しながら、石膏に戻り硬化する。これがギプスや塑像に利用される。<br>
 　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaSO₄・1/2H₂O + 3/2H₂O → CaSO₄・2H₂O</span></span>
 </p>
 
@@ -714,24 +714,125 @@ Na同様、イオン化傾向が
 
 
 <div id="al" class="screen">
-    <h3>Cl₂（塩素）</h3>
+    <h1>Alとその化合物</h1>
 
-    <p>
-    製法:
-    <span class="blank" onclick="toggle(this)">
-        ＿＿＿＿
-        <span class="answer">食塩水の電気分解</span>
-    </span>
-    </p>
+<h2>1.Al</h2>
+<h3>・製法</h3>
+<p>
+① <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">ボーキサイト（Al₂O₃・nH₂O）</span></span>を
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">濃い水酸化ナトリウム</span></span>水溶液に入れて加熱して溶かして不純物（他の金属酸化物は
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">両性</span></span>酸化物でないものが多く、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">NaOH(aq)</span></span>には溶けずに沈澱する）を取り除く。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al₂O₃ + 2NaOH + 3H₂O → 2Na[Al(OH)₄]</span></span><br><br>
 
-    <p>
-    用途:
-    <span class="blank" onclick="toggle(this)">
-        ＿＿＿＿
-        <span class="answer">ポリ塩化ビニル製造（PVC）</span>
-    </span>
-    </p>
+② の濾液に大量の水を加えると
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al(OH)₃</span></span>が沈澱する。<br><br>
 
+③ ②の沈殿物を強熱すると純粋な
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">酸化アルミニウム（アルミナ）</span></span>が得られる。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Al(OH)₃ → Al₂O₃ + 3H₂O</span></span><br><br>
+
+④ ③で得られた
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">アルミナ</span></span>を融解させる。その際に、融点が約2050℃であるため、融点を下げるために
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">氷晶石（Na₃AlF₆）</span></span>を加えて、融点を約1000℃ぐらいまで下げておく。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al₂O₃ → 2Al³⁺ + 3O²⁻</span></span><br><br>
+
+⑤ ④の融解液を電気分解（溶融塩電解）する。<br>
+　　[陰極]　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al³⁺ + 3e⁻ → Al</span></span><br>
+　　[陽極]　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">C + O²⁻ → CO + 2e⁻</span></span><br>
+　　　　　または<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">C + 2O²⁻ → CO₂ + 4e⁻</span></span>
+</p>
+
+<p>
+補）Alの精錬において、他の金属の精錬よりも大量の電気を使う理由<br>
+・ <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">融解</span></span>させるのに電気エネルギーが必要<br>
+・ Alのイオン価数が <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">3</span></span>価（一般の金属は
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2</span></span>価が主流）であるため、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">1.5</span></span>倍の電気が必要<br>
+・ 原子量が比較的 <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">小さい</span></span>（27）
+</p>
+
+<h3>・性質</h3>
+<p>
+① 密度が <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2.7 g·cm⁻³</span></span> で
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">軽い</span></span>。このため、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">銅・マグネシウム・マンガン</span></span>との軽合金として
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">ジュラルミン</span></span>が有名。<br><br>
+
+② 空気中で表面に緻密な酸化物
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al₂O₃</span></span>（酸化被膜）を作り、内部を保護して安定する。<br>
+アルミニウム製品の表面を人工的に酸化させた製品を
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">アルマイト</span></span>といい、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">耐食</span></span>性、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">絶縁</span></span>性に優れ着色もできる。<br><br>
+
+③ <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">高温の水蒸気</span></span>と反応する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Al + 6HCl → 2AlCl₃ + 3H₂</span></span><br><br>
+
+④ さんにも延期にも溶け水素を発生させる
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">両性金属</span></span>である。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Al + 6HCl → 2AlCl₃ + 3H₂</span></span><br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Al + 3NaOH + 6H₂O → 2Na[Al(OH)₄] + 3H₂</span></span><br><br>
+
+⑤ <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">不動態</span></span>形成物質である。そのため
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">濃硫酸</span></span>・
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">濃硝酸</span></span>は表面の酸化被膜の形成のため溶けにくい。<br><br>
+
+⑥ 酸素とは反応しやすい。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">4Al + 3O₂ → 2Al₂O₃</span></span><br>
+補）アルミニウムの粉末と酸化鉄との混合物に点火すると、多量の発熱を伴って激しく反応し、鉄の単体が遊離する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Al + Fe₂O₃ → Al₂O₃ + 2Fe</span></span><br>
+また、還元されにくい金属酸化物でもアルミニウム粉末との混合物の点火で金属単体が遊離する。この方法を
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">テルミット</span></span>法という。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Al + Cr₂O₃ → Al₂O₃ + 2Cr</span></span>
+</p>
+
+<h2>Al₂O₃（酸化アルミニウム）</h2>
+<h3>・性質</h3>
+<p>
+① 水に溶けず融点が非常に高い安定した物質（別名：
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">アルミナ</span></span>）である。<br><br>
+
+② <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">両性</span></span>酸化物であるため、酸にも塩基にも溶解する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al₂O₃ + 6HCl → 2AlCl₃ + 3H₂O</span></span><br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al₂O₃ + 3NaOH + 3H₂O → 2Na[Al(OH)₄]</span></span><br><br>
+
+③ 酸化アルミニウムの結晶は
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">ダイヤモンド</span></span>に次ぐ硬さを持ち、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">ルビー</span></span>（+Cr）、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">サファイア</span></span>（+Fe,Ti）の主成分である。
+</p>
+
+<h2>Al(OH)₃（水酸化アルミニウム）</h2>
+<h3>・性質</h3>
+<p>
+① アルミニウムイオンに塩基性水溶液を加えるとできる
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">白</span></span>色のゲル状沈澱である。<br><br>
+
+② <span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">両性</span></span>水酸化物であるため、酸にも塩基にも溶ける。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al(OH)₃ + 3HCl → AlCl₃ + 3H₂O</span></span><br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Al(OH)₃ + NaOH → Na[Al(OH)₄]</span></span>
+</p>
+
+<h2>KAl(SO₄)₂·12H₂O（硫酸カリウムアルミニウム十二水和物）</h2>
+<h3>・性質</h3>
+<p>
+① 硫酸カリウムと硫酸アルミニウムとの濃い水溶液を冷却させると
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">無</span></span>色の
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">正八面</span></span>体の結晶が得られる。これが硫酸カリウムアルミニウム十二水和物で別名
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">ミョウバン（カリウムミョウバン）</span></span>と呼ばれる。<br><br>
+
+② 二種類以上の塩がある一定の割合で結合した塩を
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">複塩</span></span>といい、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">ミョウバン</span></span>は複塩の代表例である。
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">カリウムミョウバン</span></span>の他にも
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">アンモニウムミョウバン（AlNH₄(SO₄)₂·12H₂O）</span></span>や、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">鉄ミョウバン（FeNH₄(SO₄)₂·12H₂O）</span></span>などもある。<br><br>
+
+③ 水溶液はすべて酸性を示す。
+</p>
+		
     <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
 </div>
 
