@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.json">
 <title>化学穴埋め単語帳</title>
 <style>
     body { font-family: sans-serif; padding:20px; line-height: 1.8; }
@@ -1002,6 +1003,18 @@ function resetAll() {
         answer.style.display = "none";
         el.childNodes[0].textContent = "＿＿＿＿";
     });
+}
+    
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', () => {
+	navigator.serviceWorker.register('sw.js').then(registration => {
+	console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	}, err => {
+	console.log('ServiceWorker registration failed: ', err);
+	}).catch(err => {
+	console.log(err)
+	});
+	});
 }
 </script>
 
