@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>化学穴埋め単語帳</title>
+<style>
+    body { font-family: sans-serif; padding:20px; line-height: 1.8; }
+    .screen { display: none; }
+    .btn {
+        display: block;
+        margin: 10px 0;
+        padding: 12px;
+        background: #4CAF50;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.2em;
+    }
+    .blank {
+        color: blue;
+        cursor: pointer;
+        border-bottom: 1px dashed gray;
+    }
+    .answer {
+        display: none;
+        font-weight: bold;
+        color: red;
+    }
+</style>
+</head>
+<body>
+
+<!-- 📍 ホーム画面 -->
+<div id="home" class="screen" style="display: block;">
+    <h1>ムキムキ単語帳</h1>
+    <p>物質を選んでください：</p>
+
+    <div style="background: #dc143c;" class="btn" onclick="openCard('na')">Na(ナトリウム)系</div>
+    <div style="background: #dc143c;" class="btn" onclick="openCard('ca')">Ca（カルシウム）系</div>
+    <div style="background: #ff8c00;" class="btn" onclick="openCard('al')">Al（アルミニウム）系</div>
+    <div style="background: #ff8c00;" class="btn" onclick="openCard('zn')">Zn（亜鉛）系</div>
+    <div style="background: #ff8c00;" class="btn" onclick="openCard('fe')">Fe（鉄）系</div>
+    <div style="background: #ff8c00;" class="btn" onclick="openCard('cu')">Cu（銅）系</div>
+    <div style="background: #ff8c00;" class="btn" onclick="openCard('ag')">Ag（銀）系</div>
+    <div style="background: #ffd700;" class="btn" onclick="openCard('c')">14族・C（炭素）系</div>
+    <div style="background: #ffd700;" class="btn" onclick="openCard('si')">14族・Si（ケイ素）系</div>
+    <div style="background: #4caf50;" class="btn" onclick="openCard('n')">15族・N（窒素）系</div>
+    <div style="background: #4caf50;" class="btn" onclick="openCard('p')">15族・P（リン）系</div>
+    <div style="background: #4169e1;" class="btn" onclick="openCard('o')">16族・O（酸素）系</div>
+    <div style="background: #4169e1;" class="btn" onclick="openCard('s')">16族・S（硫黄）系</div>
+    <div style="background: #9400d3;" class="btn" onclick="openCard('hallo')">17族・ハロゲン系</div>
+
+</div>
+
+<!-- 📍 物質カード一覧 -->
+
+<div id="na" class="screen">
+    <h1>Naとその化合物</h1>
+    <h2>1.Na
+    <h3>・製法</h3>
+    <p>
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">溶融塩電解(融解塩電解)</span>
+    </span>
+    <br>
+    塩化ナトリウム・水酸化ナトリウムの固体をそのまま融解した液体を電気分解する。
+    　　　[陰極]
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">Na⁺+e⁻→Na</span>
+    </span>
+    </p>
+
+    <h3>・性質</h3>
+    <p>① 密度が
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿(＿＿)
+        <span class="answer">小さい(0.97g/㎤)</span>
+    </span>
+    :水の密度よりも
+    <span class="blank" onclick="toggle(this)">
+        ＿＿
+        <span class="answer">低い</span>
+    </span>
+    <br>
+    ② 柔らかい。ナイフでも切れる。<br>
+    ③ 融点が
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿(＿＿)
+        <span class="answer">　低い(98℃)</span>
+    </span>
+    :水の沸点より
+    <span class="blank" onclick="toggle(this)">
+        ＿＿
+        <span class="answer">低い</span>
+    </span>
+    <br>
+    　(注)Kの沸点はNaよりも
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">さらに低い</span>
+    </span>
+    <br>
+    ④ 常温の水と激しく反応する
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">2Na+2H₂O→2NaOH+H₂</span>
+    </span>
+    (保管方法)
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">灯油</span>
+    </span>中
+    <br>
+    ⑤ 熱したナトリウムは
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">Cl(塩素)</span>
+    </span>と激しく反応する。
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">2Na+Cl₂→2NaCl</span>
+    </span>
+    <br>
+    ⑥ イオンは炎色反応を示す。(Na⁺：
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">黄</span>
+    </span>　K⁺：
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">赤紫</span>
+    </span>　Li⁺：<span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">赤</span>
+    </span>)
+    </p>
+
+    <h2>2.NaOH</h2>
+    <h3>・工業的製法</h3>
+    <p>
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">塩化ナトリウム</span>
+    </span>
+    水溶液の電気分解
+    [陰極]　<span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">2H₂O+"e⁻→2NaOH+H₂O+H₂+Cl₂</span>
+    </span>
+    <br>
+    [陽極]　<span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">2Cl⁻→Cl₂+2e⁻</span>
+    </span>
+    <br>　　⇨　[全体]　<span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">2NaCl+2H₂O→2NaOH+H₂+Cl₂</span>
+    </span>
+    </p>
+    <h3>実験室的製法</h3>
+    <p>
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">酸化ナトリウム</span>
+    </span>
+    +水：<span class="blank" onclick="toggle(this)">
+        ＿＿＿
+        <span class="answer">Na₂O+H₂O→2NaOH
+        </span>
+    </span>
+    </p>
+
+    <p>
+（補）
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">隔膜</span>
+</span>法 と 
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">イオン交換膜</span>
+</span>法
+<br>
+・
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">隔膜</span>
+</span>法：陽極側・陰極側ともに 
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaCl</span>
+</span>水溶液を利用し、隔膜に
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">石綿</span>
+</span>
+を使う。
+<br>
+（問題点）
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaCl</span>
+</span>水溶液中で
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaOH</span>
+</span>
+が発生するため、NaOH 水溶液の濃度が
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">低い</span>
+</span>
+<br><br>
+
+・
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">イオン交換膜</span>
+</span>法
+<br>
+陽極側溶液を
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaCl</span>
+</span>
+水溶液、陰極側水溶液を
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">薄い NaOH</span>
+</span>
+水溶液を利用し、隔膜に、
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">陽イオン交換膜</span>
+</span>
+を使う。
+<br>
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">陰極</span>
+</span>
+側で発生する
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaOH</span>
+</span>
+水溶液の純度が
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">高い</span>
+</span>
+のが特徴。
+</p>
+
+<p>
+[隔膜によって陽極側と陰極側を仕切る理由]
+<br>
+隔膜がないと生成した
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaOH</span>
+</span>
+と
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">Cl₂</span>
+</span>
+で
+<br>
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">2NaOH + Cl₂ → NaCl + NaClO + H₂O</span>
+</span>
+<br>
+と反応してしまい、NaOH の純度や収率が低下してしまう。
+</p>
+
+<h3>・性質</h3>
+<p>
+① 水によく溶け、水溶液は強塩基性を示す。
+<br>
+② 
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">潮解</span>
+</span>性を持つ。（
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">潮解</span>
+</span>性とは、空気中の水分を吸収して表面が濡れてくる現象）
+<br>
+③ 
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">二酸化炭素</span>
+</span>
+をよく吸収する。
+<br>　　
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">2NaOH + CO₂ → Na₂CO₃ + H₂O</span>
+</span>
+<br>
+なお、さらに
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">二酸化炭素</span>
+</span>
+を吸収させることもできる。
+<br>　　
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">Na₂CO₃ + CO₂ + H₂O → 2NaHCO₃</span>
+</span>
+<br>
+（注）
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">KOH</span>
+</span>
+も同様に①〜③の性質を持つ。
+</p>
+
+<h1>3. Na₂CO₃</h1>
+<h2>・工業的製法</h2>
+<p>
+アンモニアソーダ法
+<br>
+原料：
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaCl（食塩）</span>
+</span>
+と
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">CaCO₃（石灰石）</span>
+</span>
+<br>
+
+①
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">石灰石</span>
+</span>
+を焼く
+<br>
+　　<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">CaCO₃ → CaO + CO₂</span>
+</span>
+<br>
+
+②
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NH₃（アンモニア）</span>
+</span>
+を先、
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">CO₂</span>
+</span>
+を後で
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaCl</span>
+</span>
+の飽和水溶液に吹き込み、溶解度の小さい
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaHCO₃</span>
+</span>
+を沈殿させ、
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NH₄Cl</span>
+</span>
+溶液を分離させる。
+<br>
+　　<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaCl + H₂O + NH₃ + CO₂ → NaHCO₃ + NH₄Cl</span>
+</span>
+<br>
+
+③ ②の
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NaHCO₃</span>
+</span>
+を焼いて
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">Na₂CO₃</span>
+</span>
+を得る。
+<br>
+　　<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">2NaHCO₃ → Na₂CO₃ + CO₂ + H₂O</span>
+</span>
+<br>
+
+④ ①の
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">CaO</span>
+</span>
+に水を作用させて
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">Ca(OH)₂</span>
+</span>
+とする。
+<br>
+　　<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">CaO + H₂O → Ca(OH)₂</span>
+</span>
+<br>
+
+⑤ ④でできた
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">Ca(OH)₂</span>
+</span>
+と②の
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">NH₄Cl</span>
+</span>
+からアンモニアを取り出し、②のアンモニアに供給する。また、ここでできた
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">CaCl₂(塩化カルシウム)</span>
+</span>は副産物の乾燥剤として回収する。
+<br>
+　　<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">2NH₄Cl + Ca(OH)₂ → CaCl₂ + 2NH₃ + 2H₂O</span>
+</span>
+<br>
+
+全体の式：
+<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">2NaCl + CaCO₃ → Na₂CO₃ + CaCl₂</span>
+</span>
+</p>
+
+<h2>・性質</h2>
+<p>
+① 水に溶け、水溶液は
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">比較的強い塩基</span>
+</span>性を示す。
+<br>
+　　<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">CO₃²⁻ + H₂O ⇄ HCO₃⁻ + OH⁻</span>
+</span>
+<br>
+　補）炭酸水素ナトリウムも溶解度は小さいが水に溶ける。その際、
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">弱い塩基性</span>
+</span>となる。
+<br>
+　　<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">HCO₃⁻ ⇄ CO₂ + OH⁻</span>
+</span>
+<br>
+　なお、塩の分類としては
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">酸性塩</span>
+</span>である。
+<br>
+
+② 酸に溶け、
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">二酸化炭素</span>
+</span>を発生する
+<br>
+　　<span class="blank" onclick="toggle(this)">
+＿＿＿＿
+<span class="answer">Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂</span>
+</span>
+<br>
+
+③ 熱分解しない。
+<br>
+炭酸ナトリウムは熱に対して安定で、高温にすると分解ではなく融解する。
+<br>
+　補）炭酸水素ナトリウムは熱分解して
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">二酸化炭素</span>
+</span>を発生する
+<br>
+　　<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">2NaHCO₃ → Na₂CO₃ + H₂O + CO₂</span>
+</span>
+<br>
+
+④ 水溶液から結晶を析出させると
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">十水和物 (Na₂CO₃・10H₂O)</span>
+</span>が得られる。
+<br>
+　補）炭酸水素ナトリウムは
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">風解</span>
+</span>性を持ち
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">炭酸水素ナトリウム一水和物</span>
+</span>になる。（
+<span class="blank" onclick="toggle(this)">
+    ＿＿＿＿
+    <span class="answer">風解</span>
+</span>性とは空気中に放置すると水分を失っていく現象）
+</p>    
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="ca" class="screen">
+    <h1>Caとその化合物</h1>
+
+<h2>1. Ca</h2>
+
+<h3>・製法</h3>
+<p>
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">溶融塩電解</span></span><br>
+Na同様、イオン化傾向が
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">大きい</span></span>
+ため、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">溶融塩電解</span></span>
+で作る。
+</p>
+
+<h3>・性質</h3>
+<p>
+① Caは
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">常温の水</span></span>
+と反応し、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">H₂</span></span>
+を発生する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Ca + 2H₂O → Ca(OH)₂ + H₂</span></span><br>
+　補）Mgは
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">冷水</span></span>
+にはほとんど反応しないが、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">熱水</span></span>
+には反応する。<br><br>
+
+② 空気中で熱すると、激しく燃焼する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Ca + O₂ → 2CaO</span></span><br>
+　補）Mgも空気中で明るい光を出して燃焼する<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Mg + O₂ → 2MgO</span></span><br>
+　また、Mgは強い
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">還元</span></span>
+力を持つため、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">二酸化炭素</span></span>
+中でも燃焼する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">2Mg + CO₂ → 2MgO + C</span></span><br><br>
+
+③ イオンは炎色反応を示す。(Ca²⁺：
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">橙赤色</span></span>
+, Ba²⁺：
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">黄緑色</span></span>
+, Mg²⁺：
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">なし</span></span>
+)
+</p>
+
+
+<h2>2. CaO（酸化カルシウム）</h2>
+
+<h3>・製法</h3>
+<p>
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">石灰石（CaCO₃）</span></span>
+を焼くと酸化カルシウム（別名：
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">生石灰</span></span>
+）が得られる。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaCO₃ → CaO + CO₂</span></span>
+</p>
+
+<h3>・性質</h3>
+<p>
+① 水と反応すると、大きな
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">発熱</span></span>
+を伴って激しく反応する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaO + H₂O → Ca(OH)₂</span></span><br><br>
+
+② 塩基性酸化物であり、酸と反応する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaO + 2HCl → CaCl₂ + H₂O</span></span><br><br>
+
+③
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">コークス</span></span>
+を作用させると
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">炭化カルシウム</span></span>
+（カーバイド）が得られる。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaO + 3C → CaC₂ + CO</span></span><br><br>
+　補）カーバイドは水を加えると
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">アセチレン</span></span>
+ができる。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂</span></span><br><br>
+
+④
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">乾燥剤</span></span>
+として用いられる。<br>
+酸化カルシウムに濃い水酸化ナトリウム水溶液を染み込ませ、焼いて粒状にしたものが
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">ソーダ石灰</span></span>
+である。
+</p>
+
+
+<h2>Ca(OH)₂（水酸化カルシウム）</h2>
+
+<h3>・製法</h3>
+<p>酸化カルシウムの性質①を参照</p>
+
+<h3>・性質</h3>
+<p>
+① 水酸化カルシウム（別名：
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">消石灰</span></span>
+）は水に少し溶け（別名：
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">石灰水</span></span>
+）、強塩基性を示す。<br><br>
+
+② 水溶液は
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">二酸化炭素</span></span>
+を吸収させると白く濁り、沈澱が生じる（
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">炭酸カルシウム</span></span>
+の発生）<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Ca(OH)₂ + CO₂ → CaCO₃ + H₂O</span></span><br><br>
+
+③ ②でさらに
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">二酸化炭素</span></span>
+を吸収させると、沈殿は溶解する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaCO₃ + H₂O + CO₂ → Ca(HCO₃)₂</span></span><br><br>
+　補）炭酸水素カルシウム水溶液を加熱すると再び沈殿が生じる。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Ca(HCO₃)₂ → CaCO₃ + H₂O + CO₂</span></span><br><br>
+
+④ 塩素を吸収させると、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">さらし粉</span></span>
+（漂白・殺菌剤）ができる。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">Ca(OH)₂ + Cl₂ → CaCl(ClO)・H₂O</span></span>
+</p>
+
+
+<h2>CaCO₃（炭酸カルシウム）</h2>
+<h3>・性質</h3>
+<p>
+① 炭酸カルシウム（
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">石灰石</span></span>
+）は塩酸に溶け、
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">二酸化炭素</span></span>
+を発生する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂</span></span><br><br>
+
+② 熱分解する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaCO₃ → CaO + CO₂</span></span><br><br>
+
+③ 水に難溶である。
+</p>
+
+
+<h2>CaSO₄（硫酸カルシウム）</h2>
+<h3>・性質</h3>
+<p>
+① 天然には
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">石膏（CaSO₄・2H₂O）</span></span>
+として産出する。<br><br>
+
+② 水に難溶である。（補：MgSO₄は溶ける）<br><br>
+
+③ 石膏を加熱した
+<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">焼き石膏（CaSO₄・1/2H₂O）</span></span>
+に水を加えて練り、放置すると硬化する。<br>
+　　<span class="blank" onclick="toggle(this)">＿＿＿＿<span class="answer">CaSO₄・1/2H₂O + 3/2H₂O → CaSO₄・2H₂O</span></span>
+</p>
+
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="al" class="screen">
+    <h3>Cl₂（塩素）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">食塩水の電気分解</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">ポリ塩化ビニル製造（PVC）</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="zn" class="screen">
+    <h3>Cu（銅）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">硫化銅の焙焼→電解精製</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">電線・青銅・黄銅</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="fe" class="screen">
+    <h3>Cl₂（塩素）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">食塩水の電気分解</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">ポリ塩化ビニル製造（PVC）</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="cu" class="screen">
+    <h3>Cu（銅）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">硫化銅の焙焼→電解精製</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">電線・青銅・黄銅</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="ag" class="screen">
+    <h3>Cl₂（塩素）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">食塩水の電気分解</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">ポリ塩化ビニル製造（PVC）</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="c" class="screen">
+    <h3>Cu（銅）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">硫化銅の焙焼→電解精製</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">電線・青銅・黄銅</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="si" class="screen">
+    <h3>Cl₂（塩素）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">食塩水の電気分解</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">ポリ塩化ビニル製造（PVC）</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="n" class="screen">
+    <h3>Cu（銅）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">硫化銅の焙焼→電解精製</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">電線・青銅・黄銅</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="p" class="screen">
+    <h3>Cl₂（塩素）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">食塩水の電気分解</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">ポリ塩化ビニル製造（PVC）</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="o" class="screen">
+    <h3>Cu（銅）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">硫化銅の焙焼→電解精製</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">電線・青銅・黄銅</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="s" class="screen">
+    <h3>Cl₂（塩素）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">食塩水の電気分解</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">ポリ塩化ビニル製造（PVC）</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<div id="hallo" class="screen">
+    <h3>Cl₂（塩素）</h3>
+
+    <p>
+    製法:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">食塩水の電気分解</span>
+    </span>
+    </p>
+
+    <p>
+    用途:
+    <span class="blank" onclick="toggle(this)">
+        ＿＿＿＿
+        <span class="answer">ポリ塩化ビニル製造（PVC）</span>
+    </span>
+    </p>
+
+    <div class="btn" onclick="goHome()">⬅ ホームへ戻る</div>
+</div>
+
+
+<script>
+// 📌 空欄クリック → アンダーバー消して答えのみ表示
+function toggle(el) {
+    const answer = el.querySelector(".answer");
+    el.childNodes[0].textContent = ""; // アンダーバー削除
+    answer.style.display = "inline";
+}
+
+// 📌 ホーム・物質ページ切替
+function openCard(id) {
+    resetAll();
+    document.querySelectorAll(".screen").forEach(s => s.style.display = "none");
+    document.getElementById(id).style.display = "block";
+}
+
+function goHome() {
+    document.querySelectorAll(".screen").forEach(s => s.style.display = "none");
+    document.getElementById("home").style.display = "block";
+}
+
+// 📌 再訪時にリセット
+function resetAll() {
+    document.querySelectorAll(".blank").forEach(el => {
+        const answer = el.querySelector(".answer");
+        answer.style.display = "none";
+        el.childNodes[0].textContent = "＿＿＿＿";
+    });
+}
+</script>
+
+</body>
+</html>
