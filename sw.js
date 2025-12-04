@@ -1,4 +1,4 @@
-const SW_VERSION = 'v4';
+const SW_VERSION = 'v5';
 var CACHE_NAME = 'mukimuki-caches';
 var urlsToCache = [
 	'/mukimuki/',
